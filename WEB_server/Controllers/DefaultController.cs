@@ -9,10 +9,16 @@ namespace WEB_server.Controllers
     public class DefaultController : Controller
     {
         // GET: Default
-        public ActionResult Index(string data)
+        public ActionResult Index()
         {
-            ViewData["RFID"] = data;
             return View("Index");
+        }
+
+        public void Upload(string data)
+        {
+            //uložení dat:
+            //ViewData["RFID"] = data;
+            //return View("Index");
         }
     }
 }
